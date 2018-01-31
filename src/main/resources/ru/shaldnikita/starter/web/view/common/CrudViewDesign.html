@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;apptheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="org_vaadin_teemusa_gridextensions:org.vaadin.teemusa.gridextensions">
+  <meta name="package-mapping" content="ru_cwt_health_web_components:ru.cwt.iotmon.web.components">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-horizontal-layout size-full _id="top" :expand="0.05">
+    <vaadin-button plain-text _id="filter">
+      Filter 
+    </vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="friendly" plain-text _id="add" :right>
+      Add 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="bot" :expand>
+    <org_vaadin_teemusa_gridextensions-select-grid size-full _id="grid" :expand></org_vaadin_teemusa_gridextensions-select-grid>
+    <ru_cwt_health_web_components-edit-form size-full _id="editForm" :expand="0.45"></ru_cwt_health_web_components-edit-form>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" width-full _id="paging">
+    <vaadin-css-layout _id="totalRecordsInfo">
+     <vaadin-label plain-text _id="totalRecords">
+       Total records: 
+     </vaadin-label>
+     <vaadin-label plain-text _id="totalRecordsCount"></vaadin-label>
+    </vaadin-css-layout>
+    <vaadin-horizontal-layout spacing="false" _id="pagingButtons">
+     <vaadin-css-layout _id="prev">
+      <vaadin-button icon="fonticon://Vaadin-Icons/e6e7" plain-text _id="firstPage"></vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" plain-text _id="prevPage"></vaadin-button>
+     </vaadin-css-layout>
+     <vaadin-native-select empty-selection-allowed="false" width="100px" height="37px" data-item-type="java.lang.Integer" _id="recordsPerPage" :expand></vaadin-native-select>
+     <vaadin-css-layout _id="next">
+      <vaadin-button icon="fonticon://Vaadin-Icons/e6ec" plain-text _id="nextPage"></vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e6e8" plain-text _id="lastPage"></vaadin-button>
+     </vaadin-css-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

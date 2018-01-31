@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;apptheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="ru_cwt_monitoring_web_components:ru.cwt.Monitoring.web.components">
+  <meta name="package-mapping" content="orders:ru.yandex.nikita.ui.components">
+  <meta name="package-mapping" content="ru_cwt_health_web_components:ru.cwt.iotmon.web.components">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="storefront" spacing="false" size-full margin="false">
+   <vaadin-panel style-name="borderless" _id="searchPanel">
+    <vaadin-horizontal-layout spacing="false" width-full margin-left margin-right margin-top>
+     <vaadin-css-layout style-name="list-filters" width-full _id="topComponents" :expand>
+      <vaadin-text-field id="searchField" placeholder="Tms id.." _id="searchField"></vaadin-text-field>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" id="searchButton" plain-text _id="searchButton"></vaadin-button>
+     </vaadin-css-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-panel>
+   <ru_cwt_health_web_components-terminals-grid size-full _id="grid" :expand></ru_cwt_health_web_components-terminals-grid>
+  </vaadin-vertical-layout>
+ </body>
+</html>

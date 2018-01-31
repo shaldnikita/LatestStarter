@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-horizontal-layout style-name="top" spacing="false" width-full height="70px" _id="top">
+    <vaadin-horizontal-layout spacing="false" height-full>
+     <vaadin-combo-box style-name="app-selection" width="200px" height-full data-item-type="java.lang.String" _id="appSelection" :expand>
+      <option item="Option1">App selection</option>
+     </vaadin-combo-box>
+     <vaadin-label style-name="view-name" width="200px" height-full plain-text _id="viewName">
+       viewName 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+    <vaadin-css-layout _id="topRightButtons" :middle :right>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e60c" style-name="borderless" id="logoutButton" width="150px" style-descr="" plain-text _id="logout">
+       Выход 
+     </vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="main" :expand>
+    <vaadin-vertical-layout style-name="menu" spacing="false" width="200px" height-full margin="false" _id="menu">
+     <vaadin-css-layout style-name="navigation" id="menu" width="50%" style-descr="" _id="buttons">
+      <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="borderless" id="profileButton" style-descr="" plain-text _id="profileButton">
+        Profile 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e764" style-name="borderless" plain-text _id="settingsButton">
+        Settings 
+      </vaadin-button>
+      
+      <vaadin-button icon="fonticon://Vaadin-Icons/e747" style-name="borderless" plain-text _id="usersButton">
+        Users 
+      </vaadin-button>
+     
+      <vaadin-button icon="fonticon://Vaadin-Icons/e700" style-name="borderless" plain-text _id="dashboardButton">
+        Dashboard 
+      </vaadin-button>
+     
+     </vaadin-css-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout style-name="content" spacing="false" id="content" size-full margin="false" _id="content" :expand></vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
